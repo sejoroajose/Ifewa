@@ -21,7 +21,7 @@ const Navbar = () => {
             <a href="/" className="block">
               <img
                 className="h-20 w-auto"
-                src="../src/assets/logo.png"
+                src="/Images/logo.png"
                 alt="Ifewa Resort Logo"
               />
             </a>
