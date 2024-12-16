@@ -83,8 +83,8 @@ const ParallaxSection = ({
                 mx-auto mb-6 
                 ${
                   isMobile
-                    ? 'w-4/5' 
-                    : 'w-3/4'
+                    ? 'w-full' 
+                    : 'w-full'
                 } 
               `}
             >
