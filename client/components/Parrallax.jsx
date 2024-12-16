@@ -81,11 +81,7 @@ const ParallaxSection = ({
             <div
               className={`
                 mx-auto mb-6 
-                ${
-                  isMobile
-                    ? 'w-full' 
-                    : 'w-full'
-                } 
+                ${isMobile ? 'w-full ' : 'w-full scale-125'} 
               `}
             >
               <Lottie
