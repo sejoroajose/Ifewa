@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Lottie from 'lottie-react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -9,12 +10,22 @@ const ParallaxSection = ({
   title,
   description,
   className = '',
+  lottieAnimation = null,
+  lottieProps = {},
   children,
 }) => {
   const sectionRef = useRef(null)
   const backgroundRef = useRef(null)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
+    const checkMobileView = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    checkMobileView()
+    window.addEventListener('resize', checkMobileView)
+
     const section = sectionRef.current
     const background = backgroundRef.current
 
@@ -39,6 +50,10 @@ const ParallaxSection = ({
         toggleActions: 'play none none reverse',
       },
     })
+
+    return () => {
+      window.removeEventListener('resize', checkMobileView)
+    }
   }, [])
 
   return (
@@ -60,8 +75,28 @@ const ParallaxSection = ({
       />
       <div className="content absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
         <div className="text-center max-w-2xl p-8">
-          <h2 className="text-4xl font-bold mb-4">{title}</h2>
+          <h2 className="text-3xl font-aime mb-4">{title}</h2>
           <p className="text-xl">{description}</p>
+          {lottieAnimation && (
+            <div
+              className={`
+                mx-auto mb-6 
+                ${
+                  isMobile
+                    ? 'w-4/5' 
+                    : 'w-3/4'
+                } 
+              `}
+            >
+              <Lottie
+                animationData={lottieAnimation}
+                loop={true}
+                autoplay={true}
+                {...lottieProps}
+                className="w-full h-auto"
+              />
+            </div>
+          )}
           {children}
         </div>
       </div>
