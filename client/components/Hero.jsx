@@ -23,28 +23,29 @@ const HeroSection = () => {
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-100"
         style={{
-          backgroundImage: "url('/Images/p1.jpg')",
+          backgroundImage: "url('/Images/land.webp')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 bg-ifewa-green bg-opacity-60 backdrop-blur-sm">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-4"> 
+        {/* bg-ifewa-green bg-opacity-60 backdrop-blur-sm */}
         <div className="text-center max-w-4xl">
-          <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg animate-fade-in">
+          <h1 className="text-white text-5xl md:text-6xl font-aime font-bold mb-4 drop-shadow-lg animate-fade-in">
             Welcome to Ifewa Resort
           </h1>
           <p className="text-white text-xl md:text-2xl drop-shadow-md animate-fade-in-delayed">
             Experience Tranquility and Elegance
           </p>
         </div>
-        <div className="flex justify-center md:block">
+        {/* <div className="flex justify-center md:block">
           <Lottie
             animationData={animationData}
             loop={true}
             className="w-full max-w-[300px] md:max-w-full scale-150 h-auto opacity-100"
           />
-        </div>
+        </div> */}
       </div>
 
       <style jsx>{`

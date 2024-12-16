@@ -11,9 +11,12 @@ export const theme = {
       'ifewa-gold': '#D4AF37',
       'ifewa-earth': '#8B4513',
     },
+    fontFamily: {
+      aime: ['AIME'],
+    },
     backgroundImage: {
       'parallax-pattern': "url('/src/assets/parallax-bg.jpg')",
     },
   },
-};
+}
 export const plugins = [];

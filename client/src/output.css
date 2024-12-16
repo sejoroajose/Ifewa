@@ -820,6 +820,10 @@ video {
   text-align: center;
 }
 
+.font-aime {
+  font-family: AIME;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -914,6 +918,18 @@ body {
 #root {
   width: 100%;
   min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'AIME';
+
+  src: url('../src//assets/AimeMX/AimeMX.ttf') format('truetype');
+
+  font-weight: 600;
+
+  font-style: normal;
+
+  font-display: swap;
 }
 
 @media (prefers-color-scheme: light) {
