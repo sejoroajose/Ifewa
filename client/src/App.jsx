@@ -5,6 +5,7 @@ import HeroSection from '../components/Hero'
 import ParallaxSection from '../components/Parrallax'
 import hero from '../public/Images/hero.jpg'
 import natureAnimation from '../public/ifewa.json'
+import Service from '../components/Service'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           },
         }}
       />
+      <Service/>
     </>
   )
 }
