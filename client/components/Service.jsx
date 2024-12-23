@@ -5,7 +5,7 @@ import { TiArrowDown } from 'react-icons/ti';
 const Service = () => {
     return(
         <>
-            <div className='flex flex-col gap-6 md:gap-10 justify-center '>
+            <div className='flex flex-col gap-6 md:gap-10 justify-center py-6 md:py-20'>
                 <div className='text-center '>
                     <div className='text-center justify-center'>
                         <a href="/" className="absolute ">
