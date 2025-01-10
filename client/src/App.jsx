@@ -6,8 +6,8 @@ import hero from '../public/Images/hero.jpg'
 import natureAnimation from '../public/ifewa.json'
 import Service from '../components/Service'
 import AgroTour from '../components/Agro'
-import CountryClub from '../components/CountryClub'
 import CottageVille from '../components/CottageVille'
+import ChapterCard from '../components/ChapterCard'
 import Oasis from '../components/Oasis'
 
 
@@ -33,8 +33,8 @@ function App() {
       />
       <Service/>
       < AgroTour />
-      < CountryClub />
       < CottageVille />
+      < ChapterCard />
       <Oasis />
     </>
   )
