@@ -1,4 +1,3 @@
-import React from 'react'
 import './index.css'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/Hero'
@@ -9,6 +8,7 @@ import Service from '../components/Service'
 import AgroTour from '../components/Agro'
 import CountryClub from '../components/CountryClub'
 import CottageVille from '../components/CottageVille'
+import Oasis from '../components/Oasis'
 
 
 function App() {
@@ -35,6 +35,7 @@ function App() {
       < AgroTour />
       < CountryClub />
       < CottageVille />
+      <Oasis />
     </>
   )
 }

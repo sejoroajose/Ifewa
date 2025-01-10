@@ -26,7 +26,6 @@ const Oasis = () => {
 export default Oasis;
  */
 
-import React from 'react';
 import villas from "../../Assets/villas.jpg"; // Path to villas image
 import villawater from "../../Assets/villawater.jpg";
 import ground from "../../Assets/ground.jpg" // Path to the uploaded image you shared earlier
