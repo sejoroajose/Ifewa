@@ -5,9 +5,7 @@ import ParallaxSection from '../components/Parrallax'
 import hero from '../public/Images/hero.jpg'
 import natureAnimation from '../public/ifewa.json'
 import Service from '../components/Service'
-import AgroTour from '../components/Agro'
-import CottageVille from '../components/CottageVille'
-import ChapterCard from '../components/ChapterCard'
+import ChapterCards from '../components/ChapterCards'
 import Oasis from '../components/Oasis'
 
 
@@ -32,9 +30,7 @@ function App() {
         }}
       />
       <Service/>
-      < AgroTour />
-      < CottageVille />
-      < ChapterCard />
+      < ChapterCards />
       <Oasis />
     </>
   )
