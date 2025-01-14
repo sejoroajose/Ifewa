@@ -1,24 +1,12 @@
+import { useState, useEffect, useRef } from "react";
+
 const ChapterCard = ({ chapter, title, description, image }) => {
   return (
-    <div className="ht_chapters_itemImgArea relative w-full mt-6">
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-auto"
-      />
-      <div className="w-full absolute inset-0 grid grid-cols-2 gap-40 px-20 mt-12 text-white bg-transparent">
-        <div className="flex flex-col gap-8">
-          <div className="text-lg md:text-xl font-semibold">{chapter}</div>
-          <h2 className="w-[230px] text-2xl md:text-4xl font-light leading-tight">
-            {title}
-          </h2>
-        </div>
-        <div className="text-sm md:text-base">
-          <p className="w-[700px] leading-relaxed text-right mt-12 float-end">
-            {description}
-          </p>
-        </div>
-      </div>
+    <div
+      className="ht_chapters_itemImgArea relative w-full mt-6"
+      id={chapter.replace(/\s+/g, "-")}
+    >
+      <img src={image} alt={title} className="w-full h-auto" />
     </div>
   );
 };
@@ -55,8 +43,54 @@ const ChapterCards = () => {
     },
   ];
 
+  const [activeChapter, setActiveChapter] = useState(chapters[0].chapter);
+  const [isSectionVisible, setIsSectionVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  const handleScroll = () => {
+    chapters.forEach((chapter) => {
+      const section = document.getElementById(chapter.chapter.replace(/\s+/g, "-"));
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.top < window.innerHeight / 2;
+        if (isVisible) {
+          setActiveChapter(chapter.chapter);
+        }
+      }
+    });
+
+    // Check if the entire ChapterCards section is visible
+    if (sectionRef.current) {
+      const rect = sectionRef.current.getBoundingClientRect();
+      const isSectionInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+      setIsSectionVisible(isSectionInView);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="flex flex-col">
+    <div ref={sectionRef} className="flex flex-col">
+      {/* Fixed Text Container */}
+      {isSectionVisible && (
+        <div className="fixed h-[600px] top-20 left-16 right-20 z-50 text-white bg-transparent p-4">
+          <div className="text-lg font-semibold">{activeChapter}</div>
+          {chapters.map(
+            (chapter, index) =>
+              chapter.chapter === activeChapter && (
+                <div className="grid grid-cols-2 mt-7" key={index}>
+                  <h2 className="w-[100px] text-5xl font-light">{chapter.title}</h2>
+                  <p className="text-sm md:text-xl text-right">{chapter.description}</p>
+                </div>
+              )
+          )}
+        </div>
+      )}
+
+      {/* Chapters Display */}
       {chapters.map((chapter, index) => (
         <ChapterCard
           key={index}
@@ -66,6 +100,17 @@ const ChapterCards = () => {
           image={chapter.image}
         />
       ))}
+
+      {/* Half-circle Button */}
+      {isSectionVisible && (
+        <div className="fixed bottom-4 left-2/3 transform -translate-x-1/2">
+          <button
+            className="w-48 h-24 bg-white rounded-t-full flex items-center justify-center text-black font-semibold transition-all duration-300 hover:scale-110"
+          >
+            {activeChapter}
+          </button>
+        </div>
+      )}
     </div>
   );
 };
