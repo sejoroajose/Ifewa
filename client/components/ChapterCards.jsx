@@ -59,7 +59,7 @@ const ChapterCards = () => {
       }
     });
 
-    // Check if the entire ChapterCards section is visible
+    
     if (sectionRef.current) {
       const rect = sectionRef.current.getBoundingClientRect();
       const isSectionInView = rect.top <= window.innerHeight && rect.bottom >= 0;
@@ -76,7 +76,7 @@ const ChapterCards = () => {
     <div ref={sectionRef} className="flex flex-col">
       {/* Fixed Text Container */}
       {isSectionVisible && (
-        <div className="fixed h-[600px] top-20 left-16 right-20 z-50 text-white bg-transparent p-4">
+        <div className="fixed h-[500px] top-20 left-16 right-20 z-50 text-white bg-transparent p-4">
           <div className="text-lg font-semibold">{activeChapter}</div>
           {chapters.map(
             (chapter, index) =>
