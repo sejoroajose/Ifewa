@@ -7,6 +7,8 @@ import natureAnimation from '../public/ifewa.json'
 import Service from '../components/Service'
 import ChapterCards from '../components/ChapterCards'
 import Oasis from '../components/Oasis'
+import ResortActivities from '../components/ResortActivities'
+
 
 
 function App() {
@@ -31,7 +33,9 @@ function App() {
       />
       <Service/>
       < ChapterCards />
+      <ResortActivities />
       <Oasis />
+      
     </>
   )
 }
