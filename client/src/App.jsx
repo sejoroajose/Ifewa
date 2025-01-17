@@ -9,6 +9,10 @@ import ChapterCards from '../components/ChapterCards'
 import Oasis from '../components/Oasis'
 import ResortActivities from '../components/ResortActivities'
 
+/* import Oasis from '../components/Oasis'
+import Infosection from '../components/Infosection' */
+import Customers from '../components/Customers'
+import Footer from '../components/footer'
 
 
 function App() {
@@ -36,6 +40,12 @@ function App() {
       <ResortActivities />
       <Oasis />
       
+      {/* <Oasis />
+      <div className="mt-80">
+        <Infosection />
+      </div> */}
+      <Customers />
+      <Footer />
     </>
   )
 }

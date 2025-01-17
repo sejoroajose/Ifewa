@@ -114,7 +114,7 @@ const Oasis = () => {
 
         {/* Background image (rooms) starting from 50% of viewport height */}
         <div 
-          className="absolute md:top-[110vh] top-[100vh] left-0 right-0 bottom-0 bg-cover bg-center z-10 h-[250vh]" 
+          className="absolute md:top-[110vh] top-[100vh] left-0 right-0 bottom-0 bg-cover bg-center z-10 h-[150vh]" 
           style={{ backgroundImage: `url(${rooms})` }}
         ></div>
 
