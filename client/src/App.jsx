@@ -6,7 +6,6 @@ import hero from '../public/Images/hero.jpg'
 import natureAnimation from '../public/ifewa.json'
 import Service from '../components/Service'
 import ChapterCards from '../components/ChapterCards'
-import Oasis from '../components/Oasis'
 import ResortActivities from '../components/ResortActivities'
 
 /* import Oasis from '../components/Oasis'
@@ -38,7 +37,7 @@ function App() {
       <Service/>
       < ChapterCards />
       <ResortActivities />
-      <Oasis />
+  
       
       {/* <Oasis />
       <div className="mt-80">
