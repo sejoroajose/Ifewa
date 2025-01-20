@@ -1,6 +1,6 @@
 const ResortActivities = () => {
   return (
-    <div className="bg-gray-100 w-full h-auto py-16 flex justify-center items-center">
+    <div className="bg-gray-100 w-full h-auto py-16 flex justify-center items-center font-aime">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-8 md:gap-0 md:grid-cols-2 ">
           
@@ -8,7 +8,7 @@ const ResortActivities = () => {
             <h1 className="text-3xl font-semibold text-gray-800">
               Scenic Picnic Spots
             </h1>
-            <p className="text-gray-600 mt-2">
+            <p className="text-gray-600 mt-2 font-aime">
               Discover the perfect picnic spot among rolling hills, tranquil lakes, and beautiful gardens. 
               It's an experience that will create lasting memories.
             </p>
