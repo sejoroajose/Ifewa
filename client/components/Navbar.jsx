@@ -12,7 +12,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="fixed w-full z-50 bg-ifewa-green bg-opacity-80 backdrop-blur-sm">
+    <nav className="fixed w-full z-50 bg-ifewa-green bg-opacity-80 backdrop-blur-sm font-aime">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center">
-            <div className="hidden md:block ml-4">
+            <div className="hidden md:block ml-4 font-aime">
               <a
                 href="/buy-now"
                 className="bg-ifewa-gold text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-yellow-600 transition-colors duration-300"

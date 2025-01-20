@@ -204,12 +204,12 @@ const ContactFooter = () => {
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative container mx-auto px-4 py-16 md:px-40 pt-14">
-        <h1 className="text-5xl text-center text-white mb-20">Contact Us</h1>
+        <h1 className="text-5xl text-center text-white mb-20 font-aime">Contact Us</h1>
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form Section */}
           <div className="text-white space-y-6">
-            <h2 className="text-4xl font-serif mb-6">Get In Touch</h2>
-            <p className="text-gray-300 mb-8">
+            <h2 className="text-4xl mb-6 font-aime">Get In Touch</h2>
+            <p className="text-gray-300 mb-8 font-aime">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id officia labore
               sed cumque rem, praesentium iusto aliquam quia, accusantium
               dignissimos cupiditate accusamus cum ad dolorum corporis maxime nihil
@@ -218,37 +218,37 @@ const ContactFooter = () => {
 
             <form className="space-y-4">
               <div className="space-y-2">
-                <label htmlFor="firstName" className="block text-sm font-medium text-white">
+                <label htmlFor="firstName" className="block text-sm font-medium text-white font-aime">
                   First Name
                 </label>
                 <input
                   id="firstName"
                   type="text"
-                  className="w-full px-4 py-2 bg-white/90 outline-none text-black/70"
+                  className="w-full px-4 py-2 bg-white/90 outline-none text-black/70 font-aime"
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="email" className="block text-sm font-medium text-white">
+                <label htmlFor="email" className="block text-sm font-medium text-white font-aime">
                   E-Mail
                 </label>
                 <input
                   id="email"
                   type="email"
-                  className="w-full px-4 py-2 bg-white/90 text-black/70 outline-none"
+                  className="w-full px-4 py-2 bg-white/90 text-black/70 outline-none font-aime"
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="message" className="block text-sm font-medium text-white">
+                <label htmlFor="message" className="block text-sm font-medium text-white font-aime">
                   Message
                 </label>
                 <textarea
                   id="message"
-                  className="w-full px-4 py-2 bg-white/90 text-black/70 outline-none min-h-[150px] resize-none"
+                  className="w-full px-4 py-2 bg-white/90 text-black/70 outline-none min-h-[150px] resize-none font-aime"
                 />
               </div>
               <button
                 type="submit"
-                className="px-8 py-2 bg-[#5ca1e1] hover:bg-[#5ca1e1]/90 text-white rounded-md transition-colors"
+                className="px-8 py-2 bg-[#5ca1e1] hover:bg-[#5ca1e1]/90 text-white rounded-md transition-colors font-aime"
               >
                 SEND NOW
               </button>
@@ -270,20 +270,20 @@ const ContactFooter = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 text-white">
-              <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">Address:</p>
+              <div className="border-b-2 border-white flex justify-between pb-1 font-aime">
+                <p className="font-semibold font-aime">Address:</p>
                 <p>Moniya-iseyin Road</p>
               </div>
-              <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">Phone:</p>
+              <div className="border-b-2 border-white flex justify-between pb-1 font-aime">
+                <p className="font-semibold font-aime">Phone:</p>
                 <p>01 234567890</p>
               </div>
-              <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">City:</p>
+              <div className="border-b-2 border-white flex justify-between pb-1 font-aime">
+                <p className="font-semibold font-aime">City:</p>
                 <p>Ibadan, Oyo State</p>
               </div>
-              <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">E-mail:</p>
+              <div className="border-b-2 border-white flex justify-between pb-1 font-aime">
+                <p className="font-semibold font-aime">E-mail:</p>
                 <p>support@mobirise.com</p>
               </div>
             </div>
@@ -292,9 +292,9 @@ const ContactFooter = () => {
       </div>
 
       {/* Copyright and Scroll To Top */}
-      <div className="relative border-t border-white/20 bg-black/50">
-        <div className="container mx-auto px-4 py-8 text-center text-white">
-          <p>© Copyright 2025 Ifewa Resort - All Rights Reserved</p>
+      <div className="relative border-t border-white/20 bg-black/50 font-aime">
+        <div className="container mx-auto px-4 py-8 text-center text-white font-aime">
+          <p className='font-aime'>© Copyright 2025 Ifewa Resort - All Rights Reserved</p>
         </div>
         {showScrollToTop && (
           <button
