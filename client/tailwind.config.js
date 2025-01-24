@@ -14,6 +14,7 @@ export const theme = {
     fontFamily: {
       aime: ['AIME'],
       tt_ramillas: ['TT_RAMILLAS']
+      inter-cdnfonts: ['inter']
     },
     backgroundImage: {
       'parallax-pattern': "url('/src/assets/parallax-bg.jpg')",
