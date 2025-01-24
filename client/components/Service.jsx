@@ -1,4 +1,4 @@
-import { TiArrowDown } from 'react-icons/ti';
+/* import { TiArrowDown } from 'react-icons/ti';
 
 
 const Service = () => {
@@ -58,4 +58,87 @@ const Service = () => {
     )
 }
 
-export default Service
+export default Service */
+
+import { useState } from 'react';
+
+const WellnessPaths = () => {
+  const [isReadMore, setIsReadMore] = useState(false);
+  const [activeButton, setActiveButton] = useState(0); // Track active button
+
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+
+  const buttonImages = [
+    "/Images/land.webp",  // Image for Escape
+    "/Images/p1.jpg",     // Image for Entertainment
+    "/Images/background.webp", // Image for Enrichment
+    "/Images/land.webp",  // Image for Elegance
+  ];
+
+  // Button titles and acronyms
+  const buttonTitles = [
+    { title: "Escape", acronym: "ES" },
+    { title: "Entertainment", acronym: "EN" },
+    { title: "Enrichment", acronym: "ER" },
+    { title: "Elegance", acronym: "EL" },
+  ];
+
+  // Background image for the entire button row (based on active button)
+  const rowBackground = buttonImages[activeButton];
+
+  return (
+    <div id="panel_4caminos0_0" className="panel_4caminos" data-title="4 caminos">
+      <section className="mdl-caminos v-green-light">
+        <div className="flex flex-col gap-6 md:gap-16 pl-6 md:pl-36 py-2 md:py-20 ">
+            <header>
+              <h1 className='text-5xl font-aime'>
+                Discover four Paths <br /> to <em className='italic'>Wellness</em>
+              </h1>
+            </header>
+            <div className="m-content-see-more sta-see_more">
+                <p>A once in a lifetime wellness experience in an idyllic setting, inviting you to discover <br /> and connect with yourself and your vital rhythm.</p>
+            </div>
+        </div>
+      </section>
+
+      {/* Button Section */}
+      <section
+        className="w-full h-[30rem]  pb-4 md:pb-20 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8 relative">
+
+        {buttonTitles.map((button, index) => (
+          <div
+            key={index}
+            className={`flex-1 relative h-32 md:h-full  overflow-hidden cursor-pointer transition-opacity duration-300 ${
+              activeButton === index ? 'opacity-80' : 'opacity-100'
+            }`}
+            onClick={() => setActiveButton(index)}
+            style={{
+              backgroundImage: `url(${buttonImages[index]})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+                <div>
+                    <p
+                    className="text-xl p-4 bg-transparent border-2 border-white flex items-center justify-center"
+
+                    >
+                    {button.acronym}
+                    </p>
+                </div>
+                <h3 className="text-lg font-bold">{button.title}</h3>
+            </div>
+            </div>
+
+        ))}
+      </section>
+    </div>
+  );
+};
+
+export default WellnessPaths;
+
