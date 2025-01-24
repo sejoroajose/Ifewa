@@ -13,6 +13,8 @@ export const theme = {
     },
     fontFamily: {
       aime: ['AIME'],
+      tt_ramillas: ['TT_RAMILLAS'],
+      'inter-cdnfonts': ['INTER-CDNFONTS'],
     },
     backgroundImage: {
       'parallax-pattern': "url('/src/assets/parallax-bg.jpg')",

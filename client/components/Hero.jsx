@@ -147,10 +147,10 @@ const HeroSection = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4">
         <div className="text-center max-w-4xl">
-          <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg animate-fade-in font-aime">
+          <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg animate-fade-in font-tt_ramillas">
             Welcome to Ifewa Resort
           </h1>
-          <p className="text-white text-xl md:text-2xl drop-shadow-md animate-fade-in-delayed font-aime">
+          <p className="text-white text-xl md:text-2xl drop-shadow-md animate-fade-in-delayed font-inter-cdnfonts italic">
             Experience Tranquility and Elegance
           </p>
         </div>
@@ -166,7 +166,7 @@ const HeroSection = () => {
         </button>
       )}
 
-      <style jsx>{`
+      <style>{`
         @keyframes gradient {
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }

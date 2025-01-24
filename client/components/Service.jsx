@@ -16,8 +16,8 @@ const Service = () => {
                         </a>
                     </div>
                     <div className='mt-16 md:mt-20'>
-                        <h1 className='text-3xl text-black '>5 SERVICES</h1>
-                        <h2 className='text-3xl text-gray-500'>HEALED BY GRACEFUL TRANQUILITY</h2>
+                        <h1 className='text-3xl text-black font-tt_ramillas'>5 SERVICES</h1>
+                        <h2 className='text-3xl text-gray-500 font-tt_ramillas'>HEALED BY GRACEFUL TRANQUILITY</h2>
                     </div>
                    
                 
@@ -37,10 +37,10 @@ const Service = () => {
                         <div 
                             className='absolute top-0 left-0 h-[2px] bg-black w-1/4 group-hover:w-full transition-all duration-500'>         
                         </div>
-                        <p>{item.id}</p>
-                        <h1 className='text-3xl'>{item.title}</h1>
+                        <p className='font-inter-cdnfonts'>{item.id}</p>
+                        <h1 className='text-3xl font-tt_ramillas'>{item.title}</h1>
                         <div className='flex flex-row justify-between items-center'>
-                            <p>Agriculture been that right....</p>
+                            <p className='font-inter-cdnfonts'>Agriculture been that right....</p>
                             <div
                             className='p-1  bg-gray-300 group-hover:bg-gray-200 border-b-2 border-black transition-all duration-300'
                             >
