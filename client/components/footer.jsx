@@ -248,7 +248,7 @@ const ContactFooter = () => {
               </div>
               <button
                 type="submit"
-                className="px-8 py-2 bg-[#5ca1e1] hover:bg-[#5ca1e1]/90 text-white rounded-md transition-colors font-inter-cdnfonts"
+                className="px-8 py-2 bg-ifewa-gold hover:bg-ifewa-earth text-white rounded-md transition-colors font-inter-cdnfonts"
               >
                 SEND NOW
               </button>

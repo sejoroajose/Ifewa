@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function VenueSlider() {
   const [activeCard, setActiveCard] = useState(0);
 
-
   const cards = [
     {
       img: "Images/agro.jpg",
@@ -13,8 +12,19 @@ export default function VenueSlider() {
       description:
         "An extension of the grand lobby, Coa embraces the distinct cultural rhythm of the island and it's people, inviting discovery and encouraging participation in the local art of joyful socializing.",
       svg: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v14a3 3 0 003 3h8a3 3 0 003-3V3M5 3h14" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M5 3v14a3 3 0 003 3h8a3 3 0 003-3V3M5 3h14"
+          />
         </svg>
       ),
     },
@@ -25,8 +35,19 @@ export default function VenueSlider() {
       description:
         "An extension of the grand lobby, Coa embraces the distinct cultural rhythm of the island and it's people, inviting discovery and encouraging participation in the local art of joyful socializing.",
       svg: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 5l7 7-7 7M5 5l7 7-7 7" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M15 5l7 7-7 7M5 5l7 7-7 7"
+          />
         </svg>
       ),
     },
@@ -37,31 +58,51 @@ export default function VenueSlider() {
       description:
         "An extension of the grand lobby, Coa embraces the distinct cultural rhythm of the island and it's people, inviting discovery and encouraging participation in the local art of joyful socializing.",
       svg: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 18l6-6-6-6" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M10 18l6-6-6-6"
+          />
         </svg>
       ),
     },
     {
-      img: "Images/servicehubspace.jpg",
+      img: "Images/sevicehubspace.jpg",
       title: "Service Hub",
       subtitle: "Lobby bar 4",
       description:
         "An extension of the grand lobby, Coa embraces the distinct cultural rhythm of the island and it's people, inviting discovery and encouraging participation in the local art of joyful socializing.",
       svg: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M9 6l2 2 4-4" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12l2 2 4-4M9 6l2 2 4-4"
+          />
         </svg>
       ),
     },
   ];
 
-  // Function to change card slide
   const changeCard = (index) => {
     setActiveCard(index);
   };
 
-  // Function to change slide using next/prev buttons
   const changeSlide = (direction) => {
     if (direction === "prev") {
       setActiveCard((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
@@ -77,14 +118,12 @@ export default function VenueSlider() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat min-h-screen"
         style={{ backgroundImage: `url(/Images/background.webp)` }}
       >
-        {/* Background Overlay */}
         <div className="absolute inset-0 bg-ifewa-earth/50 z-0"></div>
       </div>
 
       {/* Foreground Content */}
       <div className="relative z-10 text-white">
-        {/* Navigation */}
-        <nav className="relative py-8 px-12 flex justify-between items-center border-b border-white/10">
+        <nav className="relative font-tt_ramillas py-8 px-12 flex justify-between items-center border-b border-white/10">
           <button
             className="p-4 border border-white/20 rounded-full hover:bg-white/10 transition-colors"
             onClick={() => changeSlide("prev")}
@@ -92,7 +131,7 @@ export default function VenueSlider() {
             <ChevronLeft className="w-4 h-4" />
           </button>
 
-          <div className="flex items-center gap-20">
+          <div className="flex items-center gap-8 md:gap-20 overflow-hidden">
             {cards.map((card, index) => (
               <a
                 key={index}
@@ -101,15 +140,15 @@ export default function VenueSlider() {
                   e.preventDefault();
                   changeCard(index);
                 }}
-                className={` transition-opacity relative ${
-                  activeCard === index ? "opacity-100" : ""
+                className={`relative ${
+                  activeCard === index ? "block" : "hidden md:block"
                 }`}
               >
                 <div className="flex flex-col items-center">
                   <div
                     className={`${
                       activeCard === index ? "text-ifewa-gold" : "text-white"
-                    } transition-colors`}
+                    }`}
                   >
                     {card.svg}
                   </div>
@@ -136,7 +175,6 @@ export default function VenueSlider() {
           </button>
         </nav>
 
-        {/* Main Content */}
         <main className="flex flex-col md:flex-row px-4 py-8 md:px-12 md:py-16 items-center">
           <div className="w-full md:w-1/2">
             <img
@@ -145,20 +183,22 @@ export default function VenueSlider() {
               className="w-full h-auto md:w-[35rem] md:h-[25rem] object-cover rounded-lg shadow-lg"
             />
           </div>
-
-          <div className="w-full md:w-1/2 md:pl-2  p-8 ">
-            <h1 className="text-4xl md:text-7xl font-light mb-4">{cards[activeCard].title}</h1>
-            <h2 className="text-xl text-white/70 mb-8">{cards[activeCard].subtitle}</h2>
-            <p className="text-sm text-lg text-white/70 mb-12 max-w-xl">
+          <div className="w-full md:w-1/2 md:pl-2 p-8 ">
+            <h1 className="text-4xl md:text-7xl font-tt_ramillas font-light mb-4">
+              {cards[activeCard].title}
+            </h1>
+            <h2 className="text-xl  text-white/70 mb-8">
+              {cards[activeCard].subtitle}
+            </h2>
+            <p className="font-inter-cdnfonts text-sm text-lg text-white/70 mb-12 max-w-xl">
               {cards[activeCard].description}
             </p>
-            <button className="bg-ifewa-gold text-black px-12 py-4 rounded-md hover:bg-ifewa-earth transition-colors">
+            <button className="bg-ifewa-gold font-tt_ramillas text-white px-12 py-4 rounded-md hover:bg-ifewa-earth transition-colors">
               Buy Now
             </button>
           </div>
         </main>
       </div>
     </section>
-
   );
 }
