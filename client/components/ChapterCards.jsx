@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function VenueSlider() {
   const [activeCard, setActiveCard] = useState(0);
 
-  // Array of card data (with sample SVGs for each title)
+
   const cards = [
     {
       img: "Images/agro.jpg",
@@ -71,85 +71,94 @@ export default function VenueSlider() {
   };
 
   return (
-    <div className="min-h-screen bg-ifewa-green text-white relative overflow-hidden">
-      {/* Navigation */}
-      <nav className="relative z-10 py-8 px-12 flex justify-between items-center border-b border-white/10">
-        <button
-          className="p-4 border border-white/20 rounded-full hover:bg-white/10 transition-colors"
-          onClick={() => changeSlide("prev")}
-        >
-          <ChevronLeft className="w-4 h-4" />
-        </button>
+    <section className="relative">
+      {/* Background Section */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat min-h-screen"
+        style={{ backgroundImage: `url(/Images/background.webp)` }}
+      >
+        {/* Background Overlay */}
+        <div className="absolute inset-0 bg-ifewa-earth/50 z-0"></div>
+      </div>
 
-        <div className="flex items-center gap-20">
-          {/* Navbar Items */}
-          {cards.map((card, index) => (
-            <a
-              key={index}
-              href="#"
-              onClick={(e) => {
-                e.preventDefault(); // Prevent default behavior (i.e., navigating)
-                changeCard(index);
-              }}
-              className={`opacity-50 hover:opacity-100 transition-opacity relative ${
-                activeCard === index ? "opacity-100" : ""
-              }`}
-            >
-              <div className="flex flex-col items-center">
-                {/* Display the SVG icon */}
-                <div
-                  className={`${
-                    activeCard === index ? "text-ifewa-gold" : "text-white"
-                  } transition-colors`}
-                >
-                  {card.svg}
-                </div>
-                <span
-                  className={`text-lg mt-1 block text-center ${
-                    activeCard === index ? "text-ifewa-gold" : "text-white"
-                  }`}
-                >
-                  {card.title}
-                </span>
-              </div>
-
-              {/* Add bottom border for active item */}
-              {activeCard === index && (
-                <span className="absolute bottom-0 left-0 w-full h-[2px] text-ifewa-gold bg-ifewa-gold"></span>
-              )}
-            </a>
-          ))}
-        </div>
-
-        <button
-          className="p-4 border border-white/20 rounded-full hover:bg-white/10 transition-colors"
-          onClick={() => changeSlide("next")}
-        >
-          <ChevronRight className="w-4 h-4" />
-        </button>
-      </nav>
-
-      {/* Main Content */}
-      <main className="flex px-12 py-16 items-center">
-        <div className="w-1/2">
-          <img
-            src={cards[activeCard].img}
-            alt={cards[activeCard].title}
-            className="w-[35rem] h-[25rem] object-cover"
-          />
-        </div>
-
-        <div className="w-1/2 pl-20">
-          <h1 className="text-7xl font-light mb-4">{cards[activeCard].title}</h1>
-          <h2 className="text-xl text-white/70 mb-8">{cards[activeCard].subtitle}</h2>
-          <p className="text-lg text-white/70 mb-12 max-w-xl">
-            {cards[activeCard].description}
-          </p>
-          <button className="bg-[#C5A572] text-black px-12 py-4 rounded-full hover:bg-[#D4B483] transition-colors">
-            Book
+      {/* Foreground Content */}
+      <div className="relative z-10 text-white">
+        {/* Navigation */}
+        <nav className="relative py-8 px-12 flex justify-between items-center border-b border-white/10">
+          <button
+            className="p-4 border border-white/20 rounded-full hover:bg-white/10 transition-colors"
+            onClick={() => changeSlide("prev")}
+          >
+            <ChevronLeft className="w-4 h-4" />
           </button>
-        </div>
-      </main>
-    </div>
+
+          <div className="flex items-center gap-20">
+            {cards.map((card, index) => (
+              <a
+                key={index}
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  changeCard(index);
+                }}
+                className={` transition-opacity relative ${
+                  activeCard === index ? "opacity-100" : ""
+                }`}
+              >
+                <div className="flex flex-col items-center">
+                  <div
+                    className={`${
+                      activeCard === index ? "text-ifewa-gold" : "text-white"
+                    } transition-colors`}
+                  >
+                    {card.svg}
+                  </div>
+                  <span
+                    className={`text-lg mt-1 block text-center ${
+                      activeCard === index ? "text-ifewa-gold" : "text-white"
+                    }`}
+                  >
+                    {card.title}
+                  </span>
+                </div>
+                {activeCard === index && (
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] text-ifewa-gold bg-ifewa-gold"></span>
+                )}
+              </a>
+            ))}
+          </div>
+
+          <button
+            className="p-4 border border-white/20 rounded-full hover:bg-white/10 transition-colors"
+            onClick={() => changeSlide("next")}
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </nav>
+
+        {/* Main Content */}
+        <main className="flex flex-col md:flex-row px-4 py-8 md:px-12 md:py-16 items-center">
+          <div className="w-full md:w-1/2">
+            <img
+              src={cards[activeCard].img}
+              alt={cards[activeCard].title}
+              className="w-full h-auto md:w-[35rem] md:h-[25rem] object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
+          <div className="w-full md:w-1/2 md:pl-2  p-8 ">
+            <h1 className="text-4xl md:text-7xl font-light mb-4">{cards[activeCard].title}</h1>
+            <h2 className="text-xl text-white/70 mb-8">{cards[activeCard].subtitle}</h2>
+            <p className="text-sm text-lg text-white/70 mb-12 max-w-xl">
+              {cards[activeCard].description}
+            </p>
+            <button className="bg-ifewa-gold text-black px-12 py-4 rounded-md hover:bg-ifewa-earth transition-colors">
+              Buy Now
+            </button>
+          </div>
+        </main>
+      </div>
+    </section>
+
   );
 }
