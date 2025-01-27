@@ -259,7 +259,11 @@ const ContactFooter = () => {
           <div className="space-y-6">
             <div className="relative h-[400px] bg-gray-100 rounded-lg overflow-hidden">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1013176.070017586!2d3.037718442166659!3d7.272779644823201!3m2!1i1024!2i768!4f13.1!2m1!1sMoniya%20Road%20-%20Ibadan%20Express%20way!5e0!3m2!1sen!2sng!4v1737363038202!5m2!1sen!2sng"
+/*                 src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1013176.070017586!2d3.037718442166659!3d7.272779644823201!3m2!1i1024!2i768!4f13.1!2m1!1sMoniya%20Road%20-%20Ibadan%20Express%20way!5e0!3m2!1sen!2sng!4v1737363038202!5m2!1sen!2sng"
+ */                
+/*             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.54377081514!2d3.7562238747653405!3d7.7319969922863425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1030b02ac485c169%3A0x56a605322a6b2ea8!2sIseyin-Ibadan%20Rd!5e0!3m2!1sen!2sng!4v1737977367615!5m2!1sen!2sng"  
+ */             
+ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.09648567594624!2d3.758637862830989!3d7.731996992286339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1030b02ac485c169%3A0x56a605322a6b2ea8!2sIseyin-Ibadan%20Rd!5e0!3m2!1sen!2sng!4v1737977789732!5m2!1sen!2sng"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -275,15 +279,15 @@ const ContactFooter = () => {
                 <p>Moniya-iseyin Road</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">Phone:</p>
+                <p className="font-semibold font-inter-cdnfonts">Phone:</p>
                 <p>01 234567890</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">City:</p>
+                <p className="font-semibold font-inter-cdnfonts">City:</p>
                 <p>Ibadan, Oyo State</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">E-mail:</p>
+                <p className="font-semibold font-inter-cdnfonts">E-mail:</p>
                 <p>support@mobirise.com</p>
               </div>
             </div>
