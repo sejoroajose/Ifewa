@@ -275,15 +275,15 @@ const ContactFooter = () => {
                 <p>Moniya-iseyin Road</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">Phone:</p>
+                <p className="font-semibold font-inter-cdnfonts">Phone:</p>
                 <p>01 234567890</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">City:</p>
+                <p className="font-semibold font-inter-cdnfonts">City:</p>
                 <p>Ibadan, Oyo State</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold">E-mail:</p>
+                <p className="font-semibold font-inter-cdnfonts">E-mail:</p>
                 <p>support@mobirise.com</p>
               </div>
             </div>
