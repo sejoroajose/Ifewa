@@ -15,7 +15,7 @@ const ResortActivities = () => {
             <p className="text-gray-600 mt-2 font-inter-cdnfonts">
               Discover the perfect picnic spot among rolling hills, tranquil lakes, and beautiful gardens. Its an experience that will create lasting memories.
             </p>
-            <button className="text-gray-800 border-2 px-3 py-2 border-gray-600 mt-4 font-inter-cdnfonts">
+            <button className="text-gray-800 border-2 px-3 py-2 hover:rounded-md border-gray-600 mt-4 font-inter-cdnfonts hover:bg-ifewa-earth hover:border-0 hover:text-white">
               Read More
             </button>
           </div>
@@ -47,7 +47,7 @@ const ResortActivities = () => {
               Explore our farm where you can pick your own vegetables, from tomatoes to lettuce,
               for a fresh and fun experience.
             </p>
-            <button className="text-gray-800 border-2 px-3 py-2 border-gray-600 mt-4 font-inter-cdnfonts">
+            <button className="text-gray-800 border-2 px-3 py-2 hover:rounded-md border-gray-600 mt-4 font-inter-cdnfonts hover:bg-ifewa-earth hover:border-0 hover:text-white">
               Read More
             </button>
           </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.path}
-                  className="text-white hover:bg-ifewa-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                  className="text-white font-inter-cdnfonts hover:bg-ifewa-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
                 >
                   {item.name}
                 </a>

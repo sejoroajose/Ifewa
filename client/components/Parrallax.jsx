@@ -180,7 +180,7 @@ const ParallaxSection = ({
         }}
       />
       <div className="content absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-        <div className="text-center max-w-2xl p-8">
+        <div className="text-center max-w-2xl p-8 min-h-screen">
           <h2 className="text-3xl font-tt_ramillas mb-4">{title}</h2>
           <p className="text-xl mb-16">{description}</p>
           {lottieAnimation && (

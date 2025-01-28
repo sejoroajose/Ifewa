@@ -89,23 +89,23 @@ const WellnessPaths = () => {
   const rowBackground = buttonImages[activeButton];
 
   return (
-    <div id="panel_4caminos0_0" className="panel_4caminos" data-title="4 caminos">
-      <section className="mdl-caminos v-green-light">
+    <div>
+      <section className="v-green-light">
         <div className="flex flex-col gap-6 md:gap-16 pl-6 md:pl-36 py-2 md:py-20 ">
             <header>
-              <h1 className='text-5xl font-aime'>
+              <h1 className='text-5xl font-tt_ramillas'>
                 Discover four Paths <br /> to <em className='italic'>Wellness</em>
               </h1>
             </header>
-            <div className="m-content-see-more sta-see_more">
-                <p>A once in a lifetime wellness experience in an idyllic setting, inviting you to discover <br /> and connect with yourself and your vital rhythm.</p>
+            <div className="">
+                <p className='font-inter-cdnfonts'>A once in a lifetime wellness experience in an idyllic setting, inviting you to discover <br /> and connect with yourself and your vital rhythm.</p>
             </div>
         </div>
       </section>
 
       {/* Button Section */}
       <section
-        className="w-full h-[30rem]  pb-4 md:pb-20 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8 relative">
+        className="w-full h-screen md:h-[30rem]  pb-4 md:pb-20 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8 relative">
 
         {buttonTitles.map((button, index) => (
           <div
@@ -124,13 +124,13 @@ const WellnessPaths = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
                 <div>
                     <p
-                    className="text-xl p-4 bg-transparent border-2 border-white flex items-center justify-center"
+                    className="text-xl p-4 bg-transparent font-tt_ramillas border-2 border-white flex items-center justify-center"
 
                     >
                     {button.acronym}
                     </p>
                 </div>
-                <h3 className="text-lg font-bold">{button.title}</h3>
+                <h3 className="font-tt_ramillas text-lg font-bold">{button.title}</h3>
             </div>
             </div>
 
