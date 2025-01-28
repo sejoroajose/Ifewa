@@ -147,7 +147,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4">
         <div className="text-center max-w-4xl">
-          <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg animate-fade-in font-tt_ramillas">
+          <h1 className="text-white text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg animate-fade-in font-tt_ramillas">
             Welcome to Ifewa Resort
           </h1>
           <p className="text-white text-xl md:text-2xl drop-shadow-md animate-fade-in-delayed font-inter-cdnfonts italic">

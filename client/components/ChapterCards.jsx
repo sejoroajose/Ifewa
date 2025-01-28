@@ -149,7 +149,7 @@ export default function VenueSlider() {
           <div className="w-full md:w-1/2 md:pl-2  p-8 ">
             <h1 className="text-4xl md:text-7xl font-light mb-4">{cards[activeCard].title}</h1>
             <h2 className="text-xl text-white/70 mb-8">{cards[activeCard].subtitle}</h2>
-            <p className="text-sm text-lg text-white/70 mb-12 max-w-xl">
+            <p className="text-sm md:text-lg text-white/70 mb-12 max-w-xl">
               {cards[activeCard].description}
             </p>
             <button className="bg-ifewa-gold text-black px-12 py-4 rounded-md hover:bg-ifewa-earth transition-colors">
