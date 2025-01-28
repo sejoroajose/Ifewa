@@ -1,6 +1,6 @@
 const ResortActivities = () => {
   return (
-    <div className="bg-gray-100 p-8 w-full h-auto md:px-40 mt-4 md:mt-10 flex justify-center items-center">
+    <div className="bg-gray-100 p-8 w-full h-auto md:px-40 flex justify-center items-center">
       <div className="container mx-auto px-4">
         <div className="flex py-2 md:py-8 justify-center items-center">
           <h1 className="font-tt_ramillas text-2xl md:text-5xl">FUN ACTIVITIES IN RESORT</h1>

@@ -2,14 +2,11 @@ import './index.css'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/Hero'
 import ParallaxSection from '../components/Parrallax'
-import hero from '../public/Images/hero.jpg'
-import natureAnimation from '../public/ifewa.json'
+import hero from '/Images/hero.jpg'
+import natureAnimation from '../src/ifewa.json'
 import Service from '../components/Service'
 import ChapterCard from '../components/ChapterCards'
 import ResortActivities from '../components/ResortActivities'
-
-/* import Oasis from '../components/Oasis'
-import Infosection from '../components/Infosection' */
 import Customers from '../components/Customers'
 import Footer from '../components/footer'
 

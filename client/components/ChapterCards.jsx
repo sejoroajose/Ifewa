@@ -115,11 +115,11 @@ export default function VenueSlider() {
     <section className="relative">
       {/* Background Section */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat min-h-screen"
-        style={{ backgroundImage: `url(/Images/background.webp)` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat "
+        style={{ backgroundImage: `url(/Images/background.webp) `  }}
       >
         <div className="absolute inset-0 bg-ifewa-earth/50 z-0"></div>
-      </div>
+      </div> 
 
       {/* Foreground Content */}
       <div className="relative z-10 text-white">
@@ -190,7 +190,7 @@ export default function VenueSlider() {
             <h2 className="text-xl  text-white/70 mb-8">
               {cards[activeCard].subtitle}
             </h2>
-            <p className="font-inter-cdnfonts text-sm text-lg text-white/70 mb-12 max-w-xl">
+            <p className="font-inter-cdnfonts text-sm text-white/70 mb-12 max-w-xl">
               {cards[activeCard].description}
             </p>
             <button className="bg-ifewa-gold font-tt_ramillas text-white px-12 py-4 rounded-md hover:bg-ifewa-earth transition-colors">
