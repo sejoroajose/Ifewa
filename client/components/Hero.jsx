@@ -151,7 +151,7 @@ const HeroSection = () => {
             Welcome to Ifewa Resort
           </h1>
           <p className="text-white text-xl md:text-2xl drop-shadow-md animate-fade-in-delayed font-inter-cdnfonts italic">
-            Experience Tranquility and Elegance
+            Experience Wellness and Lifestyle
           </p>
         </div>
       </div>

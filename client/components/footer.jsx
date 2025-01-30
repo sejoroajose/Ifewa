@@ -210,10 +210,8 @@ const ContactFooter = () => {
           <div className="text-white space-y-6">
             <h2 className="text-4xl mb-6 font-tt_ramillas italic">Get In Touch</h2>
             <p className="text-gray-300 mb-8 font-inter-cdnfonts italic">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id officia labore
-              sed cumque rem, praesentium iusto aliquam quia, accusantium
-              dignissimos cupiditate accusamus cum ad dolorum corporis maxime nihil
-              qui sunt.
+              Have questions you’d like to ask us about Ifewa Resort? We are willing to proffer answers, 
+              let’s hear from you by filling the details below!
             </p>
 
             <form className="space-y-4">

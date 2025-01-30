@@ -5,7 +5,7 @@ import ParallaxSection from '../components/Parrallax'
 import hero from '/Images/hero.jpg'
 import natureAnimation from '../src/ifewa.json'
 import Service from '../components/Service'
-import ChapterCard from '../components/ChapterCards'
+import Card from '../components/Cards'
 import ResortActivities from '../components/ResortActivities'
 import Customers from '../components/Customers'
 import Footer from '../components/footer'
@@ -19,7 +19,7 @@ function App() {
       <HeroSection />
       <ParallaxSection
         backgroundImage={hero}
-        title={'Where Natural Ambience pierce the soul'}
+        title={'… place where Nature blooms'}
         lottieAnimation={natureAnimation}
         lottieProps={{
           loop: true,
@@ -32,14 +32,8 @@ function App() {
         }}
       />
       <Service/>
-      <ChapterCard />
-      <ResortActivities />
-  
-      
-      {/* <Oasis />
-      <div className="mt-80">
-        <Infosection />
-      </div> */}
+      <Card />
+      <ResortActivities />     
       <Customers />
       <Footer />
     </>

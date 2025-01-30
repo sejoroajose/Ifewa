@@ -5,9 +5,9 @@ const Navbar = () => {
 
   const menuItems = [
     { name: 'Agro Tour', path: '/agro-tour' },
+    { name: 'Service Hub', path: '/service-hub' },
     { name: 'Country Club', path: '/country-club' },
     { name: 'Cottage Ville', path: '/cottage-ville' },
-    { name: 'Service Hub', path: '/service-hub' },
     { name: 'Residential', path: '/residential' },
   ]
 

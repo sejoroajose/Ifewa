@@ -8,9 +8,8 @@ export default function VenueSlider() {
     {
       img: "Images/agro.jpg",
       title: "Agro Hub",
-      subtitle: "Lobby bar",
       description:
-        "An extension of the grand lobby, Coa embraces the distinct cultural rhythm of the island and it's people, inviting discovery and encouraging participation in the local art of joyful socializing.",
+        "Farm activities such as harvesting fruits and vegetables, feeding animals, and learning about sustainable farming on the go.",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -29,11 +28,32 @@ export default function VenueSlider() {
       ),
     },
     {
+      img: "Images/sevicehubspace.jpg",
+      title: "Service Hub",
+      description:
+        "From concierge services to ensuring your comfort and satisfaction throughout your stay, we remain committed to satisfying your every need.",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12l2 2 4-4M9 6l2 2 4-4"
+          />
+        </svg>
+      ),
+    },
+    {
       img: "Images/country.jpg",
       title: "Country Club",
-      subtitle: "Lobby bar 2",
       description:
-        "An extension of the grand lobby, Coa embraces the distinct cultural rhythm of the island and it's people, inviting discovery and encouraging participation in the local art of joyful socializing.",
+        "Whether you are a sport and wellness enthusiast looking to unwind, we offer diverse services tailored to enhance your resort experience.",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +74,8 @@ export default function VenueSlider() {
     {
       img: "Images/cottage.jpg",
       title: "Cottage Ville",
-      subtitle: "Lobby bar 3",
       description:
-        "An extension of the grand lobby, Coa embraces the distinct cultural rhythm of the island and it's people, inviting discovery and encouraging participation in the local art of joyful socializing.",
+        "Nestled amidst lush greenery, and designed from ground up to offer serenity, thereby providing a feel-at-home experience.",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -74,29 +93,7 @@ export default function VenueSlider() {
         </svg>
       ),
     },
-    {
-      img: "Images/sevicehubspace.jpg",
-      title: "Service Hub",
-      subtitle: "Lobby bar 4",
-      description:
-        "An extension of the grand lobby, Coa embraces the distinct cultural rhythm of the island and it's people, inviting discovery and encouraging participation in the local art of joyful socializing.",
-      svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M9 12l2 2 4-4M9 6l2 2 4-4"
-          />
-        </svg>
-      ),
-    },
+
   ];
 
   const changeCard = (index) => {
@@ -187,10 +184,8 @@ export default function VenueSlider() {
             <h1 className="text-4xl md:text-7xl font-tt_ramillas font-light mb-4">
               {cards[activeCard].title}
             </h1>
-            <h2 className="text-xl  text-white/70 mb-8">
-              {cards[activeCard].subtitle}
-            </h2>
-            <p className="font-inter-cdnfonts text-sm text-white/70 mb-12 max-w-xl">
+
+            <p className="font-inter-cdnfonts text-sm text-white/70 my-12 max-w-xl">
               {cards[activeCard].description}
             </p>
             <button className="bg-ifewa-gold font-tt_ramillas text-white px-12 py-4 rounded-md hover:bg-ifewa-earth transition-colors">
