@@ -282,7 +282,7 @@ const ContactFooter = () => {
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
                 <p className="font-semibold font-inter-cdnfonts">E-mail:</p>
-                <p>support@mobirise.com</p>
+                <p>support@ifewaresort.com</p>
               </div>
             </div>
           </div>
