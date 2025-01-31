@@ -1,12 +1,14 @@
 import smallrooms from '../../Assets/smallrooms.webp';
+import samson from '../../Assets/samson.jpg'
+import bolaji from '../../Assets/bolaji.jpg'
 
 export default function Testimonials() {
     const testimonials = [
       {
         text: "I am impressed by the quality of the service and freshness of the farm produce harvested from Ifewa Resort. Even more beautiful is that we sometimes get to handpick by ourselves. Every vegetable tastes refreshing, and their commitment to sustainable farm practices remains commendable.",
-        name: "-  Bolu Akinfenwa",
+        name: "-  Samson Arogundade",
         role: "Client",
-        image: smallrooms,
+        image: samson,
       },
       {
         text: "The experience here has so far been enjoyable. Ifewa Resort stands out with the incredible variety of services, from the Agro Tour to the Country Club. Their customer service always goes the extra mile to answer my numerous questions, making the experience truly worthwhile.",
@@ -16,9 +18,9 @@ export default function Testimonials() {
       },
       {
         text: "The quality of service from this company is unparalleled! As a returning client, their dedication to quality and excellence ensures that every interaction leaves you feeling satisfied. I won’t hesitate to tell more people about this project.",
-        name: "-	Monisola Ajibade",
+        name: "-	Bolaji Ibrahim",
         role: "Client",
-        image: smallrooms, // Use the imported local image
+        image: bolaji, // Use the imported local image
       },
     ];
   
