@@ -1,6 +1,6 @@
 import samson from '../../Assets/samson.jpg'
 import bolaji from '../../Assets/bolaji.jpg'
-import bukola from '../../bukola.png'
+import bukola from '../../Assets/bukola.png'
 
 export default function Testimonials() {
     const testimonials = [
