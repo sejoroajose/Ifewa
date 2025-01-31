@@ -23,7 +23,7 @@ const ResortActivities = () => {
           {/* Image Box 1 */}
           <div className="bg-white shadow-lg overflow-hidden">
             <img
-              src="Images/picnic.jpg"
+              src="Images/farmtour.jpg"
               alt="Vegetable Picking"
               className="w-full h-full object-cover"
             />
@@ -32,7 +32,7 @@ const ResortActivities = () => {
           {/* Image Box 2 */}
           <div className="bg-white shadow-lg overflow-hidden">
             <img
-              src="Images/pickingfruit.jpg"
+              src="Images/hospitality.jpg"
               alt="Fruit Picking"
               className="w-full h-full object-cover"
             />
@@ -66,7 +66,7 @@ const ResortActivities = () => {
 
           <div className="bg-white shadow-lg overflow-hidden">
             <img
-              src="Images/pickingfruit.jpg"
+              src="Images/produce.jpg"
               alt="Fruit Picking"
               className="w-full h-full object-cover"
             />

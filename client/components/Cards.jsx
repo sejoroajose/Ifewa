@@ -7,91 +7,31 @@ export default function VenueSlider() {
   const cards = [
     {
       img: "Images/agro.jpg",
-      title: "Agro Hub",
+      title: "Agro Tour",
       description:
         "Farm activities such as harvesting fruits and vegetables, feeding animals, and learning about sustainable farming on the go.",
-      svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M5 3v14a3 3 0 003 3h8a3 3 0 003-3V3M5 3h14"
-          />
-        </svg>
-      ),
+      svg:<i className="fa-solid fa-tractor text-3xl "></i>,
     },
     {
       img: "Images/sevicehubspace.jpg",
       title: "Service Hub",
       description:
         "From concierge services to ensuring your comfort and satisfaction throughout your stay, we remain committed to satisfying your every need.",
-      svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M9 12l2 2 4-4M9 6l2 2 4-4"
-          />
-        </svg>
-      ),
+      svg:<i className="fa-solid fa-house-laptop text-3xl"></i>,
     },
     {
       img: "Images/country.jpg",
       title: "Country Club",
       description:
         "Whether you are a sport and wellness enthusiast looking to unwind, we offer diverse services tailored to enhance your resort experience.",
-      svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M15 5l7 7-7 7M5 5l7 7-7 7"
-          />
-        </svg>
-      ),
+      svg:<i className="fa-solid fa-golf-ball-tee text-3xl"></i>,
     },
     {
       img: "Images/cottage.jpg",
       title: "Cottage Ville",
       description:
         "Nestled amidst lush greenery, and designed from ground up to offer serenity, thereby providing a feel-at-home experience.",
-      svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M10 18l6-6-6-6"
-          />
-        </svg>
-      ),
+      svg: <i className="fa-solid fa-house text-3xl"></i>
     },
 
   ];
