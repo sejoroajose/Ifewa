@@ -86,9 +86,9 @@ const WellnessPaths = () => {
   return (
     <div>
       <section className="v-green-light">
-        <div className="flex flex-col gap-6 md:gap-16 pl-6 md:pl-36 py-2 md:py-20 ">
+        <div className="flex flex-col gap-8 md:gap-16 pl-8 md:pl-36 py-2 md:py-20 pr-6 md:pr-0 ">
             <header>
-              <h1 className='text-5xl font-tt_ramillas'>
+              <h1 className='text-3xl md:text-5xl font-tt_ramillas'>
                 Discover and Explore a Lifetime <br />
                 of <em className='italic'>Wellness and Lifestyle</em>
               </h1>
