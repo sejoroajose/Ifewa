@@ -1,6 +1,6 @@
-import smallrooms from '../../Assets/smallrooms.webp';
 import samson from '../../Assets/samson.jpg'
 import bolaji from '../../Assets/bolaji.jpg'
+import bukola from '../../bukola.png'
 
 export default function Testimonials() {
     const testimonials = [
@@ -12,9 +12,9 @@ export default function Testimonials() {
       },
       {
         text: "The experience here has so far been enjoyable. Ifewa Resort stands out with the incredible variety of services, from the Agro Tour to the Country Club. Their customer service always goes the extra mile to answer my numerous questions, making the experience truly worthwhile.",
-        name: "-	Ifeanyi Mark",
+        name: "-	Bukola Ajayi",
         role: "Client",
-        image: smallrooms,
+        image: bukola,
       },
       {
         text: "The quality of service from this company is unparalleled! As a returning client, their dedication to quality and excellence ensures that every interaction leaves you feeling satisfied. I won’t hesitate to tell more people about this project.",
