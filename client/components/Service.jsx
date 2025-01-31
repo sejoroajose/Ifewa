@@ -70,8 +70,8 @@ const WellnessPaths = () => {
   const buttonImages = [
     "/Images/land.webp", 
     "/Images/wellness.jpg",    
-    "/Images/wellness.jpg", 
-    "/Images/land.webp",  
+    "/Images/lifestyle.jpg", 
+    "/Images/function.jpg",  
   ];
 
   const buttonTitles = [
