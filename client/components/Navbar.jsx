@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const menuItems = [
-    { name: 'Agro Tour', path: '/agro-tour' },
+    { name: 'Agro-Tour', path: '/agro-tour' },
     { name: 'Service Hub', path: '/service-hub' },
     { name: 'Country Club', path: '/country-club' },
     { name: 'Cottage Ville', path: '/cottage-ville' },
@@ -31,7 +31,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.path}
-                  className="text-white font-inter-cdnfonts hover:bg-ifewa-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                  className="text-ifewa-green font-inter-cdnfonts hover:bg-ifewa-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
                 >
                   {item.name}
                 </a>

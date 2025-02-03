@@ -23,8 +23,8 @@ const ResortActivities = () => {
           {/* Image Box 1 */}
           <div className="bg-white shadow-lg overflow-hidden">
             <img
-              src="Images/farmtour.jpg"
-              alt="Vegetable Picking"
+              src="Images/picking.jpg"
+              alt="adventure"
               className="w-full h-full object-cover"
             />
           </div>
