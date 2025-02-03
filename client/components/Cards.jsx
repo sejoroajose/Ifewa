@@ -7,7 +7,7 @@ export default function VenueSlider() {
   const cards = [
     {
       img: "Images/agro.jpg",
-      title: "Agro Tour",
+      title: "Agro-Tour",
       description:
         "Farm activities such as harvesting fruits and vegetables, feeding animals, and learning about sustainable farming on the go.",
       svg:<i className="fa-solid fa-tractor text-3xl "></i>,
@@ -128,7 +128,9 @@ export default function VenueSlider() {
             <p className="font-inter-cdnfonts text-sm text-white/70 my-12 max-w-xl">
               {cards[activeCard].description}
             </p>
-            <button className="bg-ifewa-gold font-tt_ramillas text-white px-12 py-4 rounded-md hover:bg-ifewa-earth transition-colors">
+            <button className="bg-ifewa-gold font-tt_ramillas text-white px-12 py-4 rounded-md hover:bg-ifewa-earth transition-colors"
+              onClick={() => window.open("https://wa.me/2347067211158", "_blank")}
+            >
               Buy Now
             </button>
           </div>

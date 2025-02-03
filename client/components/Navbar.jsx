@@ -12,7 +12,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="fixed w-full z-50 bg-ifewa-green bg-opacity-80 backdrop-blur-sm font-inter-cdnfonts">
+    <nav className="fixed w-full z-50 bg-white bg-opacity-80 backdrop-blur-sm font-inter-cdnfonts">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="hidden md:block ml-4 font-inter-cdnfonts">
               <a
-                href="/buy-now"
+                href="https://wa.me/2347067211158"
                 className="bg-ifewa-gold font-inter-cdnfonts text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-yellow-600 transition-colors duration-300"
               >
                 Buy Now

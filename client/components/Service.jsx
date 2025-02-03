@@ -77,7 +77,7 @@ const WellnessPaths = () => {
   const buttonTitles = [
     { title: "Nature" },
     { title: "Wellness" },
-    { title: "Life Style" },
+    { title: "Lifestyle" },
     { title: "Functionality" },
   ];
 
