@@ -274,7 +274,7 @@ const ContactFooter = () => {
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
                 <p className="font-semibold font-inter-cdnfonts">Phone:</p>
-                <p>01 234567890</p>
+                <p>+234 806 191 2304</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
                 <p className="font-semibold font-inter-cdnfonts">City:</p>
@@ -282,7 +282,7 @@ const ContactFooter = () => {
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
                 <p className="font-semibold font-inter-cdnfonts">E-mail:</p>
-                <p>support@mobirise.com</p>
+                <p>support@ifewaresort.com</p>
               </div>
             </div>
           </div>
