@@ -111,7 +111,7 @@ const ResortActivities = () => {
               <img src={activityImages[selectedActivity]} alt={selectedActivity} className="w-full h-64 object-cover rounded-md" />
             </div>
 
-            <p className="text-gray-600 mt-4 font-tt_ramillas md:mt-12">
+            <p className="text-gray-600 mt-4 text-justify font-tt_ramillas md:mt-12 p-4 md:p-10">
               {selectedActivity === "SCENIC ADVENTURE" &&
                 "Ifewa Resort aims to create a vibrant agro-tourism experience; scenic adventure featuring personal bonding and unwinding activities, “pick-your-own” fruit sessions, educational workshops on sustainable farming, cooking classes using farm-fresh produce, on-site restaurant serving fresh locally grown meals, and offering products like dry maize, corn meal, palm oil, fresh/dry meat, and organic fertilizer. From serenity to functionality, this adventure presents a perfect opportunity to reconnect with nature and learn about sustainable farming on the go."}
               {selectedActivity === "HOSPITALITY" &&

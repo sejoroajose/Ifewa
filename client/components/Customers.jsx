@@ -1,6 +1,4 @@
-import samson from '../../Assets/samson.jpg'
-import bolaji from '../../Assets/bolaji.jpg'
-import bukola from '../../Assets/bukola.png'
+
 
 export default function Testimonials() {
     const testimonials = [
@@ -30,7 +28,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="flex flex-col pb-4">
               <div className="bg-[#B7D1DA] bg-opacity-40 p-6 rounded-lg mb-8 relative md:w-[24rem] md:h-[13rem] items-center justify-center ">
-                <p className="text-gray-600  leading-relaxed font-inter-cdnfonts">{testimonial.text}</p>
+                <p className="text-gray-600 text-justify leading-relaxed font-inter-cdnfonts">{testimonial.text}</p>
                 <div
                   className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-t-[16px]"
                   style={{ borderTopColor: 'rgba(183, 209, 218, 0.4)' }}
