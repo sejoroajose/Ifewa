@@ -6,7 +6,7 @@ export default function VenueSlider() {
 
   const cards = [
     {
-      img: "Images/agro.jpg",
+      img: "Images/agro-tour.jpg",
       title: "Agro-Tour",
       description:
         "Farm activities such as harvesting fruits and vegetables, feeding animals, and learning about sustainable farming on the go.",
