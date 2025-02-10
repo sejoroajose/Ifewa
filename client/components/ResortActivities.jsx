@@ -46,7 +46,7 @@ const ResortActivities = () => {
             </button>
           </div>
 
-          {/* Image Box 1 */}
+          
           <div className="bg-white shadow-lg overflow-hidden">
             <img src="Images/picking.jpg" alt="adventure" className="w-full h-full object-cover" />
           </div>
@@ -106,7 +106,7 @@ const ResortActivities = () => {
               </button>
             </div>
             
-            {/* Display Image Based on Selected Activity */}
+      
             <div className="mt-4">
               <img src={activityImages[selectedActivity]} alt={selectedActivity} className="w-full h-64 object-cover rounded-md" />
             </div>
