@@ -14,6 +14,13 @@ const ResortActivities = () => {
     setSelectedActivity(null);
   };
 
+  // Mapping activity names to images
+  const activityImages = {
+    "SCENIC ADVENTURE": "Images/SCENIC-ADVENTURE.jpg",
+    "HOSPITALITY": "Images/hospitality-1.jpg",
+    "PRODUCTION AND RETAIL": "Images/PRODUCTION.jpg",
+  };
+
   return (
     <div className="bg-gray-100 p-8 w-full h-auto md:px-40 flex justify-center items-center">
       <div className="container mx-auto px-4">
@@ -90,23 +97,28 @@ const ResortActivities = () => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 w-3/4 md:w-1/2 rounded-lg shadow-lg">
             <div className="flex flex-row justify-between">
-              <h2 className="text-2xl font-bold text-gray-800">{selectedActivity}</h2>
+              <h2 className="text-2xl font-inter-cdnfonts font-bold text-gray-800">{selectedActivity}</h2>
               <button
                 onClick={closePopup}
                 className="p-2 bg-ifewa-gold text-white rounded-full hover:bg-ifewa-earth"
               >
-                <X className="w-6 h-6" /> {/* Adjust size as needed */}
+                <X className="w-6 h-6" />
               </button>
             </div>
-            <p className="text-gray-600 mt-4 md:mt-12">
+            
+            {/* Display Image Based on Selected Activity */}
+            <div className="mt-4">
+              <img src={activityImages[selectedActivity]} alt={selectedActivity} className="w-full h-64 object-cover rounded-md" />
+            </div>
+
+            <p className="text-gray-600 mt-4 font-tt_ramillas md:mt-12">
               {selectedActivity === "SCENIC ADVENTURE" &&
-                "Ifewa Resort aims to create a vibrant agro-tourism experience; scenic adventure featuring personal bonding and unwinding activities, “pick-your-own” fruit sessions, educational workshops on sustainable farming, cooking classes using farm-fresh produce, on-site restaurant serving fresh locally grown meals, and offering products like dry maize, corn meal, palm oil, fresh/dry meat, and organic fertilizer.From serenity to functionality, this adventure presents a perfect opportunity to reconnect with nature and learn about sustainable farming on the go."}
+                "Ifewa Resort aims to create a vibrant agro-tourism experience; scenic adventure featuring personal bonding and unwinding activities, “pick-your-own” fruit sessions, educational workshops on sustainable farming, cooking classes using farm-fresh produce, on-site restaurant serving fresh locally grown meals, and offering products like dry maize, corn meal, palm oil, fresh/dry meat, and organic fertilizer. From serenity to functionality, this adventure presents a perfect opportunity to reconnect with nature and learn about sustainable farming on the go."}
               {selectedActivity === "HOSPITALITY" &&
-                "Ifewa Resort boasts of a feel-at-home experience that affords you a lifetime of wellness and lifestyle; an escape from the typical everyday hustle and bustle. From the moment you arrive, our warm hospitality ensures you feel right at home, whether you choose to relax by the pool, indulge in gourmet dining, explore local culture, or enjoy thrilling outdoor activities.The resort is nestled in the heart of breathtaking landscapes, promises more than a getaway, and our team remains committed to catering to your every need during your time here."}
+                "Ifewa Resort boasts of a feel-at-home experience that affords you a lifetime of wellness and lifestyle; an escape from the typical everyday hustle and bustle. From the moment you arrive, our warm hospitality ensures you feel right at home, whether you choose to relax by the pool, indulge in gourmet dining, explore local culture, or enjoy thrilling outdoor activities. The resort is nestled in the heart of breathtaking landscapes, promises more than a getaway, and our team remains committed to catering to your every need during your time here."}
               {selectedActivity === "PRODUCTION AND RETAIL" &&
                 "Get access to fresh, nutrient-rich vegetables and other farm products directly from our production hub, ensuring the best quality for your health and wellness."}
             </p>
-
           </div>
         </div>
       )}
