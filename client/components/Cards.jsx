@@ -55,7 +55,7 @@ export default function VenueSlider() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat "
         style={{ backgroundImage: `url(/Images/background.webp) `  }}
       >
-        <div className="absolute inset-0 bg-ifewa-green/50 z-0"></div>
+        <div className="absolute inset-0 bg-ifewa-earth/60 z-0"></div>
       </div> 
 
       {/* Foreground Content */}

@@ -94,8 +94,8 @@ const ResortActivities = () => {
 
       {/* Popup Modal */}
       {selectedActivity && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 w-3/4 md:w-1/2 rounded-lg shadow-lg">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white px-6 pt-6 w-3/4 md:w-1/2 rounded-lg shadow-lg">
             <div className="flex flex-row justify-between">
               <h2 className="text-2xl font-inter-cdnfonts font-bold text-gray-800">{selectedActivity}</h2>
               <button
@@ -117,7 +117,7 @@ const ResortActivities = () => {
               {selectedActivity === "HOSPITALITY" &&
                 "Ifewa Resort boasts of a feel-at-home experience that affords you a lifetime of wellness and lifestyle; an escape from the typical everyday hustle and bustle. From the moment you arrive, our warm hospitality ensures you feel right at home, whether you choose to relax by the pool, indulge in gourmet dining, explore local culture, or enjoy thrilling outdoor activities. The resort is nestled in the heart of breathtaking landscapes, promises more than a getaway, and our team remains committed to catering to your every need during your time here."}
               {selectedActivity === "PRODUCTION AND RETAIL" &&
-                "Get access to fresh, nutrient-rich vegetables and other farm products directly from our production hub, ensuring the best quality for your health and wellness."}
+                "Highlighting crops such as maize, sweet corn, sweet potato, vegetables and fruits, Ifewa Resort offers direct sales of fresh products rich in macro and multi nutrients needed for overall health and wellness. At the core of our service hub are components such as commercial hub, business automation and optimization channels, all designed to complement your experience here, and further promote the vision that form the bedrock of Ifewa Resort.By seamlessly integrating our expertise with daily operations, we create unmatched access to healthy living and retail opportunities for any and every one"}
             </p>
           </div>
         </div>
