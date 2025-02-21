@@ -7,7 +7,7 @@ export const content = [
 export const theme = {
   extend: {
     colors: {
-      'ifewa-green': '#293F14',
+      'ifewa-green': '#1a2d0c',
       'ifewa-gold': '#D4AF37',
       'ifewa-earth': '#8B4513',
     },

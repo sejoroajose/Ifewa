@@ -74,7 +74,7 @@ const AnimatedQuote = () => {
           splitText.words,
           {
             duration: 0.2,
-            color: '#ff8709',
+            color: '#D4AF37',
             scale: 0.9,
             stagger: 0.1,
           },
@@ -134,10 +134,10 @@ const AnimatedQuote = () => {
       <div className="w-full   text-center">
         <div
           ref={quoteRef}
-          className="text-5xl md:text-6xl w-full  mx-auto text-center font-ramillas-regular px-8 leading-tight text-white"
+          className="text-3xl md:text-6xl w-full  mx-auto text-center font-ramillas-regular px-8 leading-tight text-white"
           aria-live="polite"
         >
-          Welcome to Ifewa Resort, Experience Wellness and Lifestyle
+          Welcome to {" "}Ifewa Resort, Experience Wellness and Lifestyle
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.path}
-                  className="text-ifewa-green font-ramillas-regular hover:bg-ifewa-gold hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-ifewa-gold font-ramillas-regular hover:bg-ifewa-gold hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   {item.name}
                 </a>
@@ -63,7 +63,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-ifewa-green">
+          <div className="px-2 pt-2 pb-8 space-y-1 text-center sm:px-3 bg-ifewa-green">
             {menuItems.map((item) => (
               <a
                 key={item.name}
