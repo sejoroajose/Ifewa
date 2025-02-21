@@ -648,6 +648,26 @@ video {
   top: 50%;
 }
 
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -720,6 +740,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .block {
@@ -1096,6 +1120,11 @@ video {
   background-color: rgb(255 255 255 / 0.9);
 }
 
+.bg-\[\#25D366\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 211 102 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
@@ -1166,6 +1195,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-12 {
@@ -1395,6 +1428,11 @@ video {
   color: rgb(255 255 255 / 0.9);
 }
 
+.text-ifewa-green {
+  --tw-text-opacity: 1;
+  color: rgb(41 63 20 / var(--tw-text-opacity, 1));
+}
+
 .opacity-100 {
   opacity: 1;
 }
@@ -1565,6 +1603,16 @@ body {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-\[\#128C7E\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 140 126 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-ifewa-green:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 63 20 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-opacity-75:hover {
   --tw-bg-opacity: 0.75;
 }
@@ -1600,6 +1648,14 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-12 {
+    bottom: 3rem;
+  }
+
+  .md\:right-12 {
+    right: 3rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1618,6 +1674,18 @@ body {
 
   .md\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:mt-48 {
+    margin-top: 12rem;
+  }
+
+  .md\:mt-4 {
+    margin-top: 1rem;
   }
 
   .md\:block {
@@ -1646,6 +1714,14 @@ body {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-\[14rem\] {
+    height: 14rem;
+  }
+
+  .md\:h-\[15rem\] {
+    height: 15rem;
   }
 
   .md\:w-1\/2 {
@@ -1745,6 +1821,16 @@ body {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:pb-20 {

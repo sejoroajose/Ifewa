@@ -42,7 +42,7 @@ const ResortActivities = () => {
             </p>
             <button
               onClick={() => openPopup('SCENIC ADVENTURE')}
-              className="text-gray-800 border-2 px-3 py-2 hover:rounded-md border-gray-600 mt-4 font-ramillas-regular hover:bg-ifewa-earth hover:border-0 hover:text-white"
+              className="text-gray-800 border-2 px-3 py-2  border-gray-600 mt-4 font-ramillas-regular hover:bg-ifewa-earth hover:border-0 hover:text-white"
             >
               Read More
             </button>
@@ -73,7 +73,7 @@ const ResortActivities = () => {
             </p>
             <button
               onClick={() => openPopup('HOSPITALITY')}
-              className="text-gray-800 border-2 px-3 py-2 hover:rounded-md border-gray-600 mt-4 font-ramillas-regular hover:bg-ifewa-earth hover:border-0 hover:text-white"
+              className="text-gray-800 border-2 px-3 py-2  border-gray-600 mt-4 font-ramillas-regular hover:bg-ifewa-earth hover:border-0 hover:text-white"
             >
               Read More
             </button>
@@ -89,7 +89,7 @@ const ResortActivities = () => {
             </p>
             <button
               onClick={() => openPopup('PRODUCTION AND RETAIL')}
-              className="text-gray-800 border-2 px-3 py-2 hover:rounded-md border-gray-600 mt-4 font-ramillas-regular hover:bg-ifewa-earth hover:border-0 hover:text-white"
+              className="text-gray-800 border-2 px-3 py-2  border-gray-600 mt-4 font-ramillas-regular hover:bg-ifewa-earth hover:border-0 hover:text-white"
             >
               Read More
             </button>
@@ -97,7 +97,7 @@ const ResortActivities = () => {
 
           <div className="bg-white shadow-lg overflow-hidden">
             <img
-              src="Images/produce.jpg"
+              src="https://res.cloudinary.com/dnu6az3um/image/upload/v1740162016/food_qie4ya.jpg"
               alt="Fruit Picking"
               className="w-full h-full object-cover"
             />
@@ -107,28 +107,27 @@ const ResortActivities = () => {
 
       {selectedActivity && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white px-6 pt-6 w-3/4 md:w-1/2 rounded-lg shadow-lg">
+          <div className="bg-white p-12 w-3/4 md:w-1/2  shadow-lg">
             <div className="flex flex-row justify-between">
-              <h2 className="text-2xl font-inter-cdnfonts font-bold text-gray-800">
+              <h2 className="text-2xl font-ramillas-regular font-bold text-gray-800">
                 {selectedActivity}
               </h2>
               <button
                 onClick={closePopup}
                 className="p-2 bg-ifewa-gold text-white rounded-full hover:bg-ifewa-earth"
               >
-                <X className="w-6 h-6" />
+                <X className="w-4 h-4" />
               </button>
             </div>
 
-            <div className="mt-4">
+            <div className="mt-8 mb-8">
               <img
                 src={activityImages[selectedActivity]}
                 alt={selectedActivity}
-                className="w-full h-64 object-cover rounded-md"
+                className="w-full h-64 object-cover"
               />
             </div>
-
-            <p className="text-gray-600 mt-4 text-justify font-ramillas-regula md:mt-12 p-4 md:p-10">
+            <p className="text-gray-600 mt-4 text-justify font-ramillas-regular md:mt-4">
               {selectedActivity === 'SCENIC ADVENTURE' &&
                 'Ifewa Resort aims to create a vibrant agro-tourism experience; scenic adventure featuring personal bonding and unwinding activities, “pick-your-own” fruit sessions, educational workshops on sustainable farming, cooking classes using farm-fresh produce, on-site restaurant serving fresh locally grown meals, and offering products like dry maize, corn meal, palm oil, fresh/dry meat, and organic fertilizer. From serenity to functionality, this adventure presents a perfect opportunity to reconnect with nature and learn about sustainable farming on the go.'}
               {selectedActivity === 'HOSPITALITY' &&

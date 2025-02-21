@@ -53,7 +53,7 @@ const Navbar = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-ifewa-green inline-flex items-center justify-center p-2  text-white hover:bg-ifewa-gold focus:outline-none"
+                className="bg-ifewa-gold inline-flex items-center justify-center p-2  text-white hover:bg-ifewa-green focus:outline-none"
               >
                 {isOpen ? 'Close' : 'Menu'}
               </button>
@@ -63,19 +63,19 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-8 space-y-1 text-center sm:px-3 bg-ifewa-green">
+          <div className="px-2 pt-2 pb-8 space-y-1 text-center sm:px-3 bg-white bg-opacity-30 backdrop-blur-sm">
             {menuItems.map((item) => (
               <a
                 key={item.name}
                 href={item.path}
-                className="text-white hover:bg-ifewa-gold block px-3 py-2  text-base font-medium"
+                className="text-ifewa-green hover:bg-ifewa-gold block px-3 py-2  text-base font-medium"
               >
                 {item.name}
               </a>
             ))}
             <a
               href="/buy-now"
-              className="bg-ifewa-gold text-white block px-3 py-2  text-base font-medium text-center mt-2"
+              className="bg-ifewa-gold text-white hover:bg-ifewa-green block px-3 py-2  text-base font-medium text-center mt-2"
             >
               Buy Now
             </a>

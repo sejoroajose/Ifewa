@@ -9,7 +9,7 @@ export const theme = {
     colors: {
       'ifewa-green': '#1a2d0c',
       'ifewa-gold': '#D4AF37',
-      'ifewa-earth': '#8B4513',
+      'ifewa-earth': '#D4AF37',
     },
     fontFamily: {
       aime: ['AIME'],

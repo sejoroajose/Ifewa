@@ -1,153 +1,134 @@
-import { useState, useEffect } from 'react';
-
+import { MessageCircle } from 'lucide-react'
 
 const ContactFooter = () => {
-  const [showScrollToTop, setShowScrollToTop] = useState(false);
+  const whatsappNumber = '2347067211158'
+  const whatsappUrl = `https://wa.me/${whatsappNumber}`
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
- 
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setShowScrollToTop(scrollTop > 200); // Show the button after scrolling 200px
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const handleWhatsAppClick = () => {
+    window.open(whatsappUrl, '_blank')
+  }
 
   return (
     <footer className="relative">
-      {/* Background Image */}
       <div
-        className='absolute inset-0 bg-cover bg-center bg-no-repeat'
-        style={{ backgroundImage: `url(/Images/rooms.webp) `  }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(/Images/rooms.webp) ` }}
       />
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative container mx-auto px-4 py-16 md:px-[3.5rem] pt-14">
-        <h1 className="text-5xl text-center text-white mb-20 font-tt_ramillas italic">Contact Us</h1>
+        <h1 className="text-5xl text-center text-white mb-20 font-ramillas-italic">
+          Contact Us
+        </h1>
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form Section */}
           <div className="text-white space-y-6">
-            <h2 className="text-4xl mb-6 font-tt_ramillas italic">Get In Touch</h2>
-            <p className="text-gray-300 mb-8 font-inter-cdnfonts italic">
-              Have questions you’d like to ask us about Ifewa Resort? We are willing to proffer answers, 
-              let’s hear from you by filling the details below!
+            <h2 className="text-4xl mb-6 font-ramillas-italic">Get In Touch</h2>
+            <p className="text-gray-300 mb-8 font-ramillas-italic">
+              Have questions you’d like to ask us about Ifewa Resort? We are
+              willing to proffer answers, let’s hear from you by filling the
+              details below!
             </p>
 
-            <form className="space-y-4">
+            <form className="space-y-4 font-ramillas-regular">
               <div className="space-y-2">
-                <label htmlFor="firstName" className="block text-sm font-medium text-white font-inter-cdnfonts">
+                <label
+                  htmlFor="firstName"
+                  className="block text-sm font-medium text-white"
+                >
                   First Name
                 </label>
                 <input
                   id="firstName"
                   type="text"
-                  className="w-full px-4 py-2 bg-white/90 outline-none text-black/70 font-inter-cdnfonts"
+                  className="w-full px-4 py-2 bg-white/90 outline-none text-black/70 "
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="email" className="block text-sm font-medium text-white font-inter-cdnfonts">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-white"
+                >
                   E-Mail
                 </label>
                 <input
                   id="email"
                   type="email"
-                  className="w-full px-4 py-2 bg-white/90 text-black/70 outline-none font-inter-cdnfonts"
+                  className="w-full px-4 py-2 bg-white/90 text-black/70 outline-none"
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="message" className="block text-sm font-medium text-white font-inter-cdnfonts">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-white"
+                >
                   Message
                 </label>
                 <textarea
                   id="message"
-                  className="w-full px-4 py-2 bg-white/90 text-black/70 outline-none min-h-[150px] resize-none font-inter-cdnfonts"
+                  className="w-full px-4 py-2 bg-white/90 text-black/70 outline-none min-h-[150px] resize-none"
                 />
               </div>
               <button
                 type="submit"
-                className="px-8 py-2 bg-ifewa-gold hover:bg-ifewa-earth text-white rounded-md transition-colors font-inter-cdnfonts"
+                className="px-8 py-2 bg-ifewa-gold hover:bg-ifewa-earth text-white transition-colors"
               >
                 SEND NOW
               </button>
             </form>
           </div>
 
-          {/* Map and Contact Info Section */}
           <div className="space-y-6">
-            <div className="relative h-[400px] bg-gray-100 rounded-lg overflow-hidden">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.09648567594624!2d3.758637862830989!3d7.731996992286339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1030b02ac485c169%3A0x56a605322a6b2ea8!2sIseyin-Ibadan%20Rd!5e0!3m2!1sen!2sng!4v1737977789732!5m2!1sen!2sng"
+            <div className="relative h-[400px] bg-gray-100 overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21721.343589415585!2d3.6735648560387286!3d7.859143191772387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1740160056670!5m2!1sen!2sng"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                />
+              />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 text-white font-inter-cdnfonts italic">
-              <div className="border-b-2 border-white flex justify-between pb-1 font-inter-cdnfonts italic">
-                <p className="font-semibold font-inter-cdnfonts italic">Address:</p>
+            <div className="grid md:grid-cols-2 gap-8 text-white font-ramillas-italic">
+              <div className="border-b-2 border-white flex justify-between pb-1">
+                <p className="font-semibold ">Address:</p>
                 <p>Moniya-iseyin Road</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold font-inter-cdnfonts">Phone:</p>
+                <p className="font-semibold ">Phone:</p>
                 <p>+234 806 191 2304</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold font-inter-cdnfonts">City:</p>
+                <p className="font-semibold ">City:</p>
                 <p>Ibadan, Oyo State</p>
               </div>
               <div className="border-b-2 border-white flex justify-between pb-1">
-                <p className="font-semibold font-inter-cdnfonts">E-mail:</p>
-                <p>support@ifewaresort.com</p>
+                <p className="font-semibold ">E-mail:</p>
+                <p>info@ifewaresort.com</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Copyright and Scroll To Top */}
       <div className="relative border-t border-white/20 bg-black/50 font-inter-cdnfonts italic">
         <div className="container mx-auto px-4 py-8 text-center text-white">
-          <p>© Copyright 2025 Ifewa Resort - All Rights Reserved</p>
+          <p>
+            © Copyright 2025 Ifewa Resort & McYouniverse Properties - All Rights
+            Reserved
+          </p>
         </div>
-        {showScrollToTop && (
-          <button
-            onClick={scrollToTop}
-            className="fixed bottom-4 right-4 p-5 bg-black/95 hover:bg-black/70 text-white transition-all"
-            aria-label="Scroll to top"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                d="M5 15l7-7 7 7"
-              />
-            </svg>
-          </button>
-        )}
+        <button
+          onClick={handleWhatsAppClick}
+          className="fixed md:bottom-12 bottom-6 md:right-12 right-6 p-4 bg-ifewa-gold text-white rounded-full shadow-lg transition-all duration-300 z-50 flex items-center justify-center"
+          aria-label="Contact via WhatsApp"
+        >
+          <MessageCircle className="h-6 w-6" />
+        </button>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default ContactFooter;
+export default ContactFooter

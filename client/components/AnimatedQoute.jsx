@@ -137,7 +137,7 @@ const AnimatedQuote = () => {
           className="text-3xl md:text-6xl w-full  mx-auto text-center font-ramillas-regular px-8 leading-tight text-white"
           aria-live="polite"
         >
-          Welcome to {" "}Ifewa Resort, Experience Wellness and Lifestyle
+          Welcome to Ifewa Resort, Experience Wellness and Lifestyle
         </div>
       </div>
     </div>
