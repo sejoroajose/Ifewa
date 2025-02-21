@@ -25,9 +25,12 @@ const ResortActivities = () => {
     <div className="bg-gray-100 p-8 w-full h-auto md:px-40 flex justify-center items-center">
       <div className="container mx-auto px-4">
         <div className="flex py-2 md:py-16 justify-center items-center">
-          <h1 className="font-ramillas-italic  text-2xl md:text-4xl">
+          <h1 className="font-ramillas-regular  text-2xl md:text-4xl">
             Designed with{' '}
-            <span className="text-ifewa-gold">You and Yours </span>in mind...
+            <span className="font-ramillas-italic text-ifewa-gold">
+              You and Yours{' '}
+            </span>
+            in mind...
           </h1>
         </div>
         <div className="grid grid-cols-1 gap-8 md:gap-0 md:grid-cols-2">
