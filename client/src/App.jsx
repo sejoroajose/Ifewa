@@ -1,9 +1,7 @@
 import './index.css'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/Hero'
-import ParallaxSection from '../components/Parrallax'
-import hero from '/Images/hero.jpg'
-import natureAnimation from '../src/ifewa.json'
+import VideoSection from '../components/videoBackground'
 import Service from '../components/Service'
 import Card from '../components/Cards'
 import ResortActivities from '../components/ResortActivities'
@@ -17,23 +15,18 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
-      <ParallaxSection
-        backgroundImage={hero}
-        title={'… place where Nature blooms'}
-        lottieAnimation={natureAnimation}
-        lottieProps={{
-          loop: true,
-          autoplay: true,
-          style: {
-            width: 'auto',
-            height: 'auto',
-            margin: '0',
-          },
-        }}
-      />
-      <Service/>
+      <VideoSection
+        videoUrl="https://res.cloudinary.com/dnu6az3um/video/upload/v1740151581/background_hmhnwo.mp4"
+        title="Nature Blooms"
+        description="Experience a fusion of functionality, wellness and lifestyle; immerse yourself in nature; a day at a time!"
+      >
+        <button className="px-8 py-3 bg-white text-black rounded-full font-ramillas-regular hover:bg-opacity-90 transition-all">
+          Buy Now
+        </button>
+      </VideoSection>
+      <Service />
       <Card />
-      <ResortActivities />     
+      <ResortActivities />
       <Customers />
       <Footer />
     </>

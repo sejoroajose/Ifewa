@@ -30,11 +30,45 @@ body {
 
 @font-face {
   font-family: 'AIME';
-  src: url('../src//assets/AimeMX/AimeMX.ttf') format('truetype');
+  src: url('../src/assets/AimeMX/AimeMX.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'ramillas-regular';
+  src: url('../src/assets/tt_ramillas/ramillas_regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ramillas-italic';
+  src: url('../src/assets/tt_ramillas/ramillas_italic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+
 
 @media (prefers-color-scheme: light) {
 }

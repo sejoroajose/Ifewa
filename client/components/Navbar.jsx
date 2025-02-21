@@ -12,7 +12,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="fixed w-full z-50 bg-white bg-opacity-80 backdrop-blur-sm font-inter-cdnfonts">
+    <nav className="fixed w-full z-50 bg-white bg-opacity-30 backdrop-blur-sm font-ramillas-regular">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -31,7 +31,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.path}
-                  className="text-ifewa-green font-inter-cdnfonts hover:bg-ifewa-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                  className="text-ifewa-green font-ramillas-regular hover:bg-ifewa-gold hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   {item.name}
                 </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <div className="hidden md:block ml-4 font-inter-cdnfonts">
               <a
                 href="https://wa.me/2347067211158"
-                className="bg-ifewa-gold font-inter-cdnfonts text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-yellow-600 transition-colors duration-300"
+                className="bg-ifewa-gold font-ramillas-regular text-white px-4 py-2 text-sm font-medium hover:bg-yellow-600 transition-colors duration-300"
               >
                 Buy Now
               </a>
@@ -53,7 +53,7 @@ const Navbar = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-ifewa-green inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-ifewa-gold focus:outline-none"
+                className="bg-ifewa-green inline-flex items-center justify-center p-2  text-white hover:bg-ifewa-gold focus:outline-none"
               >
                 {isOpen ? 'Close' : 'Menu'}
               </button>
@@ -68,14 +68,14 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.path}
-                className="text-white hover:bg-ifewa-gold block px-3 py-2 rounded-md text-base font-medium"
+                className="text-white hover:bg-ifewa-gold block px-3 py-2  text-base font-medium"
               >
                 {item.name}
               </a>
             ))}
             <a
               href="/buy-now"
-              className="bg-ifewa-gold text-white block px-3 py-2 rounded-md text-base font-medium text-center mt-2"
+              className="bg-ifewa-gold text-white block px-3 py-2  text-base font-medium text-center mt-2"
             >
               Buy Now
             </a>

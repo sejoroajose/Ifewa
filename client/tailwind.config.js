@@ -7,13 +7,14 @@ export const content = [
 export const theme = {
   extend: {
     colors: {
-      'ifewa-green': '#2C5E1A',
+      'ifewa-green': '#293F14',
       'ifewa-gold': '#D4AF37',
       'ifewa-earth': '#8B4513',
     },
     fontFamily: {
       aime: ['AIME'],
-      tt_ramillas: ['TT_RAMILLAS'],
+      'ramillas-regular': ['ramillas-regular'],
+      'ramillas-italic': ['ramillas-italic'],
       'inter-cdnfonts': ['INTER-CDNFONTS'],
     },
     backgroundImage: {
